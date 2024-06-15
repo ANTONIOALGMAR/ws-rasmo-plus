@@ -2,6 +2,7 @@ package com.client.ws.rasmooplus.controller;
 
 import com.client.ws.rasmooplus.model.SubscriptionsType;
 import com.client.ws.rasmooplus.repository.SubscriptionsTypeRepository;
+import com.client.ws.rasmooplus.service.SubscriptionTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,10 +17,10 @@ import java.util.List;
 public class SubscriptionsTypeController {
 
     @Autowired
-    private SubscriptionsTypeRepository subscriptionsTypeRepository;
+    private SubscriptionTypeService subscriptionsTypeService;
 
     @GetMapping
     public ResponseEntity<List<SubscriptionsType>> findAll(){
-        return ResponseEntity.status(HttpStatus.OK).body(subscriptionsTypeRepository.findAll());
+        return ResponseEntity.status(HttpStatus.OK).body(subscriptionsTypeService.findAll());
     }
 }
