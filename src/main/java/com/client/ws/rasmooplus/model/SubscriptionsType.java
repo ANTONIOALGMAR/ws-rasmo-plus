@@ -14,17 +14,17 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name="subscription_type")
-public class SubscriptionType implements Serializable {
+@Table(name="subscriptions_type")
+public class SubscriptionsType implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name= "subscription_type_id")
+    @Column(name= "subscriptions_type_id")
     private Long id;
 
     private String name;
 
-    @Column(name= "access_month")
+    @Column(name= "access_months")
     private Long accessMonth;
 
     private BigDecimal price;
