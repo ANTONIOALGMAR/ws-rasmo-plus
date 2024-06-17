@@ -14,4 +14,11 @@ public class rosourceHandler {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorMessage);
 
     }
+
+    @ExceptionHandler(BadRequestException.class)
+    public ResponseEntity<String> badRequestException(BadRequestException b){
+        String errorMessage = b.getMessage();
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorMessage);
+
+    }
 }
