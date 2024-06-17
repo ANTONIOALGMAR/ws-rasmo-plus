@@ -1,5 +1,6 @@
 package com.client.ws.rasmooplus.service.impl;
 
+import com.client.ws.rasmooplus.exception.NotFoundException;
 import com.client.ws.rasmooplus.model.SubscriptionsType;
 import com.client.ws.rasmooplus.repository.SubscriptionsTypeRepository;
 import com.client.ws.rasmooplus.service.SubscriptionTypeService;
@@ -27,8 +28,9 @@ public class SubscriptiontypeServiceImpl implements SubscriptionTypeService {
     public SubscriptionsType findById(Long id) {
         Optional<SubscriptionsType> optionalSubscriptionsType = subscriptionsTypeRepository.findById(id);
         if (optionalSubscriptionsType.isEmpty()) {
-            return null;
+            throw new NotFoundException("SubscriptionType não encontrado");
         }
+
         return optionalSubscriptionsType.get();
     }
 
