@@ -1,7 +1,6 @@
 package com.client.ws.rasmooplus.controller;
 
 import com.client.ws.rasmooplus.dto.SubscriptionsTypeDto;
-import com.client.ws.rasmooplus.exception.NotFoundException;
 import com.client.ws.rasmooplus.model.SubscriptionsType;
 import com.client.ws.rasmooplus.service.SubscriptionTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,13 +23,23 @@ public class SubscriptionsTypeController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<SubscriptionsType>findById(@PathVariable("id") Long id) {
+    public ResponseEntity<SubscriptionsType> findById(@PathVariable("id") Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(subscriptionsTypeService.findById(id));
     }
 
     @PostMapping
-    public ResponseEntity<SubscriptionsType> create(@RequestBody SubscriptionsTypeDto dto){
+    public ResponseEntity<SubscriptionsType> create(@RequestBody SubscriptionsTypeDto dto) {
         return ResponseEntity.status(HttpStatus.CREATED).body(subscriptionsTypeService.create(dto));
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<SubscriptionsType> update(@PathVariable("id") Long id, @RequestBody SubscriptionsTypeDto dto) {
+        return ResponseEntity.status(HttpStatus.OK).body(subscriptionsTypeService.update(id, dto));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable("id") Long id){
+        subscriptionsTypeService.delete(id);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+    }
 }
