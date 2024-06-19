@@ -7,6 +7,8 @@ import com.client.ws.rasmooplus.mapper.SubscriptionTypeMapper;
 import com.client.ws.rasmooplus.model.SubscriptionsType;
 import com.client.ws.rasmooplus.repository.SubscriptionsTypeRepository;
 import com.client.ws.rasmooplus.service.SubscriptionTypeService;
+import com.client.ws.rasmooplus.controller.SubscriptionsTypeController;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +18,8 @@ import java.util.Optional;
 @Service
 public class SubscriptiontypeServiceImpl implements SubscriptionTypeService {
 
+    private static final String UPDATE = "update";
+    private static final String DELETE = "delete";
     private final SubscriptionsTypeRepository subscriptionsTypeRepository;
 
     SubscriptiontypeServiceImpl(SubscriptionsTypeRepository subscriptionsTypeRepository){
@@ -30,7 +34,16 @@ public class SubscriptiontypeServiceImpl implements SubscriptionTypeService {
 
     @Override
     public SubscriptionsType findById(Long id) {
-        return getSubscriptionsType(id);
+        return getSubscriptionsType(id).add(WebMvcLinkBuilder.linkTo(
+                WebMvcLinkBuilder.methodOn(SubscriptionsTypeController.class).findById(id))
+                .withSelfRel()
+        ).add(WebMvcLinkBuilder.linkTo(
+                WebMvcLinkBuilder.methodOn(SubscriptionsTypeController.class).update(id, new SubscriptionsTypeDto()))
+                .withRel(UPDATE)
+        ).add(WebMvcLinkBuilder.linkTo(
+                WebMvcLinkBuilder.methodOn(SubscriptionsTypeController.class).delete(id))
+                .withRel(DELETE)
+        );
     }
 
     @Override
