@@ -1,11 +1,4 @@
 package com.client.ws.rasmooplus.dto;
-
-import com.client.ws.rasmooplus.model.SubscriptionsType;
-import com.client.ws.rasmooplus.model.UserType;
-import jakarta.persistence.Column;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -24,7 +17,7 @@ import java.time.LocalDate;
 @Builder
 public class UserDto {
 
-    private Long Id;
+    private Long id;
 
     @NotBlank(message = "valor nao pode ser nulo ou vazio")
     @Size(min = 6, message = "valor minimo igual a 6 caracteres")
@@ -46,7 +39,7 @@ public class UserDto {
     private LocalDate dtExpiration = LocalDate.now();
 
 
-    @NotNull
+    @NotNull(message = "Id do tipo usuario nao pode ser nulo")
     private Long userTypeId;
 
 

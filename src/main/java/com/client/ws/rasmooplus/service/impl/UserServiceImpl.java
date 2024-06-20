@@ -34,6 +34,7 @@ public class UserServiceImpl implements UserService {
         }
 
         var userTypeOpt = userTypeRepository.findById(dto.getUserTypeId());
+
         if (userTypeOpt.isEmpty()){
             throw new NotFoundException("userTypeId não encontrado");
         }

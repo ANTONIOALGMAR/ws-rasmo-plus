@@ -1,0 +1,70 @@
+2024-06-20T09:19:48.795-03:00  INFO 14460 --- [restartedMain] c.c.w.r.WsRasmooPlusApplication          : Starting WsRasmooPlusApplication using Java 17.0.11 with PID 14460 (/Users/antonio/Downloads/ws-rasmoo-plus/target/classes started by antonio in /Users/antonio/Downloads/ws-rasmoo-plus)
+2024-06-20T09:19:48.808-03:00 DEBUG 14460 --- [restartedMain] c.c.w.r.WsRasmooPlusApplication          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-20T09:19:48.811-03:00  INFO 14460 --- [restartedMain] c.c.w.r.WsRasmooPlusApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-06-20T09:19:49.205-03:00  INFO 14460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-20T09:19:49.208-03:00  INFO 14460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-20T09:19:51.190-03:00  INFO 14460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-20T09:19:51.308-03:00  INFO 14460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 4 JPA repository interfaces.
+2024-06-20T09:19:52.859-03:00  INFO 14460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-06-20T09:19:52.891-03:00  INFO 14460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-20T09:19:52.892-03:00  INFO 14460 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-20T09:19:52.998-03:00  INFO 14460 --- [restartedMain] o.a.c.c.C.[.[localhost].[/ws-rasplus]    : Initializing Spring embedded WebApplicationContext
+2024-06-20T09:19:52.999-03:00  INFO 14460 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3790 ms
+2024-06-20T09:19:53.508-03:00  INFO 14460 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-20T09:19:53.846-03:00  INFO 14460 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15bdcb95
+2024-06-20T09:19:53.849-03:00  INFO 14460 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-20T09:19:54.067-03:00  INFO 14460 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/RASPLUS (MySQL 8.0)
+2024-06-20T09:19:54.233-03:00  INFO 14460 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.083s)
+2024-06-20T09:19:54.276-03:00  INFO 14460 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `RASPLUS`: 1
+2024-06-20T09:19:54.306-03:00  INFO 14460 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `RASPLUS` is up to date. No migration necessary.
+2024-06-20T09:19:54.504-03:00  INFO 14460 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-20T09:19:54.622-03:00  INFO 14460 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-20T09:19:54.692-03:00  INFO 14460 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-20T09:19:55.336-03:00  INFO 14460 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-20T09:19:57.576-03:00  INFO 14460 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-20T09:19:57.583-03:00  INFO 14460 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-20T09:19:58.223-03:00  WARN 14460 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-20T09:19:59.364-03:00  INFO 14460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-20T09:19:59.430-03:00  INFO 14460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/ws-rasplus'
+2024-06-20T09:19:59.452-03:00  INFO 14460 --- [restartedMain] c.c.w.r.WsRasmooPlusApplication          : Started WsRasmooPlusApplication in 12.185 seconds (process running for 13.812)
+2024-06-20T09:30:11.290-03:00  INFO 14460 --- [http-nio-8082-exec-5] o.a.c.c.C.[.[localhost].[/ws-rasplus]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-20T09:30:11.360-03:00  INFO 14460 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-20T09:30:11.636-03:00  INFO 14460 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 270 ms
+2024-06-20T10:15:44.985-03:00  WARN 14460 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m20s794ms).
+2024-06-20T10:28:05.984-03:00  WARN 14460 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m50s991ms).
+2024-06-20T10:31:04.660-03:00  WARN 14460 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=28s677ms), soft-evicting connections from pool.
+2024-06-20T10:38:29.194-03:00  INFO 14460 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-20T10:38:29.294-03:00  INFO 14460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-20T10:38:29.305-03:00  INFO 14460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-20T10:40:00.131-03:00  INFO 16796 --- [restartedMain] c.c.w.r.WsRasmooPlusApplication          : Starting WsRasmooPlusApplication using Java 17.0.11 with PID 16796 (/Users/antonio/Downloads/ws-rasmoo-plus/target/classes started by antonio in /Users/antonio/Downloads/ws-rasmoo-plus)
+2024-06-20T10:40:00.135-03:00 DEBUG 16796 --- [restartedMain] c.c.w.r.WsRasmooPlusApplication          : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-20T10:40:00.137-03:00  INFO 16796 --- [restartedMain] c.c.w.r.WsRasmooPlusApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-06-20T10:40:00.332-03:00  INFO 16796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-20T10:40:00.333-03:00  INFO 16796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-20T10:40:02.538-03:00  INFO 16796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-20T10:40:02.715-03:00  INFO 16796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 4 JPA repository interfaces.
+2024-06-20T10:40:04.548-03:00  INFO 16796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-06-20T10:40:04.575-03:00  INFO 16796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-20T10:40:04.575-03:00  INFO 16796 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-20T10:40:04.695-03:00  INFO 16796 --- [restartedMain] o.a.c.c.C.[.[localhost].[/ws-rasplus]    : Initializing Spring embedded WebApplicationContext
+2024-06-20T10:40:04.696-03:00  INFO 16796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4361 ms
+2024-06-20T10:40:05.225-03:00  INFO 16796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-20T10:40:05.610-03:00  INFO 16796 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fe7fa92
+2024-06-20T10:40:05.613-03:00  INFO 16796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-20T10:40:05.709-03:00  INFO 16796 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/RASPLUS (MySQL 8.0)
+2024-06-20T10:40:05.940-03:00  INFO 16796 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.101s)
+2024-06-20T10:40:05.985-03:00  INFO 16796 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `RASPLUS`: 1
+2024-06-20T10:40:05.995-03:00  INFO 16796 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `RASPLUS` is up to date. No migration necessary.
+2024-06-20T10:40:06.233-03:00  INFO 16796 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-20T10:40:06.390-03:00  INFO 16796 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-20T10:40:06.485-03:00  INFO 16796 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-20T10:40:07.156-03:00  INFO 16796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-20T10:40:09.551-03:00  INFO 16796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-20T10:40:09.556-03:00  INFO 16796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-20T10:40:10.183-03:00  WARN 16796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-20T10:40:11.211-03:00  INFO 16796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-20T10:40:11.328-03:00  INFO 16796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/ws-rasplus'
+2024-06-20T10:40:11.349-03:00  INFO 16796 --- [restartedMain] c.c.w.r.WsRasmooPlusApplication          : Started WsRasmooPlusApplication in 12.773 seconds (process running for 15.235)
+2024-06-20T10:43:25.467-03:00  INFO 16796 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-20T10:43:25.495-03:00  INFO 16796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-20T10:43:25.537-03:00  INFO 16796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
