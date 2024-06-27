@@ -3,4 +3,4 @@ CREATE TABLE IF NOT EXISTS users_seq (
   next_val BIGINT(20) NULL DEFAULT NULL,
   PRIMARY KEY (users_id));
 
-  ============================================
+  =================
