@@ -1,4 +1,4 @@
-package com.client.ws.rasmooplus.exception.handler;
+package com.client.ws.rasmooplus.exception;
 
 public class BadRequestException extends RuntimeException{
 

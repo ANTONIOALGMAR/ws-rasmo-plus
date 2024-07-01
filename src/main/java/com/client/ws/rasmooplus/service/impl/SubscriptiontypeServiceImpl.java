@@ -2,7 +2,7 @@ package com.client.ws.rasmooplus.service.impl;
 
 import com.client.ws.rasmooplus.dto.SubscriptionsTypeDto;
 import com.client.ws.rasmooplus.exception.NotFoundException;
-import com.client.ws.rasmooplus.exception.handler.BadRequestException;
+import com.client.ws.rasmooplus.exception.BadRequestException;
 import com.client.ws.rasmooplus.mapper.SubscriptionTypeMapper;
 import com.client.ws.rasmooplus.model.SubscriptionsType;
 import com.client.ws.rasmooplus.repository.SubscriptionsTypeRepository;

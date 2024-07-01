@@ -32,16 +32,12 @@ public class UserDto {
     @CPF(message = "Inválido")
     private String cpf;
 
-
     private LocalDate dtSubscription = LocalDate.now();
-
 
     private LocalDate dtExpiration = LocalDate.now();
 
-
     @NotNull(message = "Id do tipo usuario nao pode ser nulo")
     private Long userTypeId;
-
 
     private Long subscriptionsTypeId;
 }

@@ -1,6 +1,7 @@
 package com.client.ws.rasmooplus.exception.handler;
 
 import com.client.ws.rasmooplus.dto.error.ErrorResponseDto;
+import com.client.ws.rasmooplus.exception.BadRequestException;
 import com.client.ws.rasmooplus.exception.NotFoundException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
